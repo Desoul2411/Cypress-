@@ -1,7 +1,7 @@
-it('check Das Wetter in... presence in the search nar when switch language to German ', () => {
+it('check Das Wetter in... presence in the search bar when switch language to German ', () => {
     cy.visit('https://weather.com/en-GB/')
     cy.wait(6000)
-    cy.get('.styles__borderLeft__2zhrE')
+    cy.get('.styles__menuButton__3KeBe.styles__button__4qZmw')
     .click()
     cy.contains('Europe')
     .click()

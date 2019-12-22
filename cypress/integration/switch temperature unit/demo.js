@@ -1,7 +1,7 @@
-it('check temperature switch', () => {
+it('switch temperature unit ', () => {
     cy.visit('https://weather.com/en-GB/')
     cy.wait(6000)
-    cy.get('.styles__borderLeft__2zhrE')
+    cy.get('.styles__menuButton__3KeBe.styles__button__4qZmw')
     .click()
     cy.contains('°F')
     .click()
@@ -14,7 +14,7 @@ it('check temperature switch', () => {
     cy.wait(2000)
 
 
-    cy.get('.styles__borderLeft__2zhrE')
+    cy.get('.styles__menuButton__3KeBe.styles__button__4qZmw')
     .click()
     cy.contains('°C')
     .click()
